@@ -10,11 +10,11 @@ class Div : public Base {
         this->left = value1;
 	this->right = value2; 
         }
-        virtual double evaluate() { return this->left->evaluate()/this->right->evaluate();}
+        virtual double evaluate() { return this->left->evaluate() / this->right->evaluate();}
         virtual std::string stringify()
         {
                 return value1->stringify() + " / " + value2->stringify();
         };
-
+};
 #endif //__DIV_HPP__
 ~
