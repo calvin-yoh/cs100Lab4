@@ -4,8 +4,15 @@
 #include "base.hpp"
 #include <cstdlib>
 class Rand : public Base {
-    public:
-        Rand(double value) : Base() { }
+	private:
+		double val;  
+  public:
+        Rand(double value) : Base()
+ {
+	this->val = value;
+	this->left = NULL;
+	this->right = NULL;	
+ }
         virtual double evaluate() { return value; }
         virtual std::string stringify() { string s = to_string(value); return s; }
 };

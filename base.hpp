@@ -6,12 +6,17 @@
 class Base {
     public:
         /* Constructors */
-        Base() {};
+        Base() 
+	{
+		left = NULL;
+		right = NULL;
+	};
+	Base* left;
+	Base* right; 
 	
         /* Pure Virtual Functions */
         virtual double evaluate() = 0;
         virtual std::string stringify() = 0;
 };
-
 
 #endif //__BASE_HPP__
