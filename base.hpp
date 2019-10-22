@@ -8,8 +8,6 @@ class Base {
         /* Constructors */
         Base() 
 	{
-		left = NULL;
-		right = NULL;
 	};
 	Base* left;
 	Base* right; 

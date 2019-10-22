@@ -1,7 +1,8 @@
 #ifndef __Sub_HPP__
 #define __Sub_HPP__
 
-class Base;
+#include "base.hpp"
+#include "op.hpp"
 
 class Sub : public Base {
     public:
@@ -10,8 +11,8 @@ class Sub : public Base {
         this->left = value1;
         this->right = value2;
         }
-        virtual double evaluate() { return this->left->evaluate() - this->right->evaluate();}
-        virtual std::string stringify()
+        double evaluate() { return this->left->evaluate() - this->right->evaluate();}
+        std::string stringify()
         {
                 return this->left->stringify() + " - " + this->right->stringify();
         }

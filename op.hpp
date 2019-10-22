@@ -12,8 +12,8 @@ private:
 	this->left = NULL;
 	this->right = NULL;
  }
-        virtual double evaluate() { return val; }
-        virtual std::string stringify() {std::string s = std::to_string(val); return s; }
+        double evaluate() { return val; }
+        std::string stringify() {std::string s = std::to_string(val); return s; }
 };
 
 #endif //__OP_HPP__

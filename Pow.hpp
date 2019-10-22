@@ -3,6 +3,7 @@
 
 #include <cmath>
 #include "base.hpp"
+#include "op.hpp"
 
 class Pow : public Base {
     public:
@@ -11,8 +12,8 @@ class Pow : public Base {
         this->left = value1;
         this->right = value2;
  }
-        virtual double evaluate() { return pow(this->left->evaluate(),this->right->evaluate());}
-        virtual std::string stringify()
+        double evaluate() { return pow(this->left->evaluate(),this->right->evaluate());}
+        std::string stringify()
         {
                 return this->left->stringify() + " ^ " + this->right->stringify();
         }

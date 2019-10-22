@@ -2,7 +2,6 @@
 #define __RAND_HPP__
 
 #include "base.hpp"
-#include <cstdlib>
 class Rand : public Base {
 	private:
 		double val;  

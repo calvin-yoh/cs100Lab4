@@ -1,3 +1,4 @@
+#include "base.hpp"
 class NegativeOpMock: public Base{
    public:
       NegativeOpMock(){};
