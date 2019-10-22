@@ -2,7 +2,6 @@
 #define __OP_HPP__
 
 #include "base.hpp"
-#include <string>
 class Op : public Base {
 private:
 	double val;

@@ -1,5 +1,4 @@
 #include "base.hpp"
-#include <string.h>
 
 
 double Base::evaluate()

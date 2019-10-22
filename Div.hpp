@@ -1,7 +1,7 @@
 #ifndef __DIV_HPP__
 #define __DIV_HPP__
 
-#include "base.hpp"
+class Base;
 
 class Div : public Base {
     public:
@@ -13,8 +13,8 @@ class Div : public Base {
         virtual double evaluate() { return this->left->evaluate() / this->right->evaluate();}
         virtual std::string stringify()
         {
-                return value1->stringify() + " / " + value2->stringify();
-        };
+                return this->left->stringify() + " / " + this->right->stringify();
+        }
 };
 #endif //__DIV_HPP__
 ~
